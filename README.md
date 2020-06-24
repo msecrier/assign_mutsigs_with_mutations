@@ -14,6 +14,8 @@ BiocManager::install(c("BSgenome","GenomicRanges","BSgenome","MutationalPatterns
 ```
 
 # python-dependencies:
-# To install all dependencies open a python shell
+# To install all dependencies open a bash shell
 
+```bash
 pip install gzip logging os import click pandas collections
+```
