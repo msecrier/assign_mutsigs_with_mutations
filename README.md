@@ -21,4 +21,4 @@ pip install gzip logging os import click pandas collections
 ```
 
 # Hot to run:
-see file 
+see file pipeline_assign_mutsigs_with_mut.sh
