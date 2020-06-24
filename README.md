@@ -19,3 +19,6 @@ BiocManager::install(c("BSgenome","GenomicRanges","BSgenome","MutationalPatterns
 ```bash
 pip install gzip logging os import click pandas collections
 ```
+
+# Hot to run:
+see file 
