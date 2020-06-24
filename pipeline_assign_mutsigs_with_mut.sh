@@ -6,10 +6,11 @@
 # - A table with the COSMIC signatures (e.g. sigProfiler_SBS_signatures_2019_05_22.csv)
 # Output files:
 # - An .RData object with the COSMIC signatures (e.g. sigProfiler_SBS_signatures_2019_05_22.RData)
-# - A parsed table with the COSMIC signatures (default output name: signatures_probabilities.txt)
+ - A parsed table with the COSMIC signatures (default output name: signatures_probabilities.txt)
 
+working_dir=$(pwd) # users can remove this line and change manually the code
 
-Rscript run_prepare_data_cosmic.R
+Rscript $working_dir/scripts_mutsig_to_muts/run_prepare_data_cosmic.R
 
 #
 #  Step2: Pre-processing ICGC data, perform the pre-processing of variants file on ICGC
@@ -20,7 +21,7 @@ Rscript run_prepare_data_cosmic.R
 # Output files:
 # - a tab-delimited file  (deconstructsigs.tsv) with this format: ID, chr, start, REF, ALT (input for deconstructsigs)
 
-Rscript run_preprocessing_ICGC2.R
+Rscript $working_dir/scripts_mutsig_to_muts/run_preprocessing_ICGC2.R
 
 
 #
@@ -37,5 +38,5 @@ Rscript run_preprocessing_ICGC2.R
 # - for each samples the weights computed for each signature
 # - for each mutational signature a .txt table (e.g. SBS15.tsv) with this format: chr, start, REF, ALT, patient_id
 
-sh deconstructsigs.sh /home/guidantoniomt/kate/vcf_files /home/guidantoniomt/kate/output_assignment default /home/guidantoniomt/kate/sigProfiler_SBS_signatures_2019_05_22.RData
+sh $working_dir/scripts_mutsig_to_muts/deconstructsigs.sh /home/guidantoniomt/kate/vcf_files /home/guidantoniomt/kate/output_assignment default /home/guidantoniomt/kate/sigProfiler_SBS_signatures_2019_05_22.RData
 
