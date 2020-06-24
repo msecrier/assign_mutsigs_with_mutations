@@ -1,7 +1,7 @@
 # assign_mutsigs_with_mutations
 
 
-# R-dependencies:
+# R dependencies:
 ## To install all dependencies open a R shell
 
 ```r
@@ -13,7 +13,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install(c("BSgenome","GenomicRanges","BSgenome","MutationalPatterns","BSgenome.Hsapiens.UCSC.hg19"))
 ```
 
-# python-dependencies:
+# python dependencies:
 ## To install all dependencies open a bash shell
 
 ```bash
