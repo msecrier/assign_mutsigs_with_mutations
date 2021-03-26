@@ -20,5 +20,5 @@ BiocManager::install(c("BSgenome","GenomicRanges","BSgenome","MutationalPatterns
 pip install gzip logging os import click pandas collections
 ```
 
-# Hot to run:
+# How to run:
 see file pipeline_assign_mutsigs_with_mut.sh

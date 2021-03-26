@@ -35,7 +35,7 @@ Rscript $working_dir/scripts_mutsig_to_muts/run_preprocessing_ICGC2.R
 # path to cosmic RData (e.g. /home/guidantoniomt/kate/sigProfiler_SBS_signatures_2019_05_22.RData)
 
 # Output files:
-# - for each samples the weights computed for each signature
+# - for each sample the weights computed for each signature
 # - for each mutational signature a .txt table (e.g. SBS15.tsv) with this format: chr, start, REF, ALT, patient_id
 
 sh $working_dir/scripts_mutsig_to_muts/deconstructsigs.sh /home/guidantoniomt/kate/vcf_files /home/guidantoniomt/kate/output_assignment default /home/guidantoniomt/kate/sigProfiler_SBS_signatures_2019_05_22.RData
