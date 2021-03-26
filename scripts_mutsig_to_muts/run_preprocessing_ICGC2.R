@@ -37,7 +37,7 @@ myvcf2<-myvcf2[myvcf2$mutated_to_allele!='-',]
 
 	triplets = as.character(getSeq(Hsapiens, paste("chr",myvcf2_parse$CHR,sep=""), start = myvcf2_parse$POS-1, end = myvcf2_parse$POS+1))
 
-	myvcf2_parse<-cbind(myvcf2_parse,triplets)
+	myvcf2_parse<-unique(cbind(myvcf2_parse,triplets))
 
 setwd("/home/guidantoniomt/kate/vcf_files")
 	
